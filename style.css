@@ -1,0 +1,381 @@
+body {
+    background-color: #fafafa;
+    margin: 0;
+}
+
+nav {
+    background-color: #fff;
+    width: 100%;
+    height: 2cm;
+    line-height: 2cm;
+    padding: 0 4cm;
+    border-bottom: 0.1px solid beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.logo>img {
+    vertical-align: middle;
+}
+
+img {
+    max-width: 160px;
+    max-height: 60px;
+}
+
+.search {
+    background: #f2f2f2;
+    height: 0.8cm;
+    width: 6cm;
+    border: 1px solid #dbdbdb;
+    text-align: left;
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.search::placeholder {
+    text-align: center;
+    color: #dbdbdb;
+}
+
+.nav-links {}
+
+.nav-links>a {
+    margin-left: 2em;
+}
+
+.nav-links i {
+    transform: scale(1.4);
+    color: black;
+    vertical-align: middle;
+    fill: #262626;
+}
+
+.container {
+    height: 5;
+    padding: 0% 20%;
+}
+
+.bio {
+    width: 100%;
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 5cm;
+    height: 5cm;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.profile-photo img {
+    border: 1px solid lightgray;
+}
+
+img {
+    max-height: 5cm;
+    max-width: 5cm;
+}
+
+.profile-photo>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-info .username {
+    font-size: 28px;
+    color: #545454;
+}
+
+.profile-info button {
+    color: #262626;
+    font-size: 18px;
+    width: 4cm;
+    height: 1cm;
+    border: unset;
+    cursor: pointer;
+}
+
+#addPhotoInput {
+    display: none;
+}
+
+.add-photo {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.post .text {
+    font-size: 20px;
+    line-height: 0cm;
+    margin-left: 5cm;
+    color: #262626;
+    padding: 5px 10px 0px;
+    text-transform: uppercase;
+}
+
+.gallery-nav {
+    height: 2cm;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    margin-bottom: 2cm;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.item {
+    height: 5cm;
+    width: 5cm;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.item>img {
+    height: 100%;
+    width: 100%;
+}
+
+.item>img:hover {
+    opacity: 0.7;
+}
+
+#addImageInput {
+    display: none;
+}
+
+#uploadPhotoInput {
+    display: none;
+}
+
+footer {
+    background: #eee;
+    color: #111;
+}
+
+footer ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background: #fff;
+    color: #fff;
+    background-color: #fff;
+}
+
+.footer ul {
+    text-align: center;
+    margin-top: 50px;
+    list-style: none;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 4;
+    margin-bottom: 0px;
+}
+
+.footer ul li a {
+    color: #717070;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+}
+
+footer ul li {
+    margin-left: 30px;
+}
+
+.code1 a {
+    margin-left: 0.6cm;
+    color: #646363;
+}
+
+form {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 25px;
+    max-width: 50vw;
+}
+
+div.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+div.wrapper {
+    width: 100%;
+    height: calc(100vh - 4cm);
+}
+
+form.upload-form {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+form.upload-form h2 {
+    display: inline;
+}
+
+div.layout-horizontal-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+}
+
+div.layout-horizontal-2 div {
+    max-width: 90%;
+}
+
+div.layout-horizontal-2 div:first-child {
+    margin-right: 5%;
+}
+
+div.shared-image-container {
+    width: 100%;
+    max-height: 75vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.shared-image-container img {
+    width: 100%;
+}
+
+div.post-container {
+    width: 100%;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.post-container img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+div.post-container div.post-info {
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        padding-bottom: 0px !important;
+    }
+    div.wrapper {
+        height: auto !important;
+    }
+    div.centered {
+        justify-content: flex-start;
+        margin-top: 3em;
+    }
+    div.layout-horizontal-2 {
+        width: 100% !important;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+    }
+    div.layout-horizontal-2>div {
+        width: 100% !important;
+        min-width: auto !important;
+        max-width: 90vw !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    form {
+        width: 100% !important;
+        max-width: 90vw !important;
+    }
+    header nav {
+        padding: 10px;
+    }
+    footer.footer {
+        position: relative;
+        max-width: 100%;
+        display: flex;
+        opacity: 1;
+    }
+    footer.footer>ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        padding: 0px !important;
+    }
+    footer.footer>ul li {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    section.bio {
+        padding: 0px !important;
+    }
+    section.bio div.profile-photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 40% !important;
+        max-height: 100% !important;
+    }
+    section.bio div.profile-photo img {
+        width: 100%;
+        height: auto;
+    }
+    section.gallery {
+        display: flex;
+        flex-direction: column;
+        max-width: 100% !important;
+    }
+    section.gallery div {
+        max-width: 100% !important;
+        margin: 0 !important;
+        margin-bottom: 10px;
+    }
+    form.searcher {
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+}
